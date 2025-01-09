@@ -56,7 +56,7 @@ def reload_table():
     table.destroy()
     stroka = ['']
     table = Table(main_win,
-                  headings=('НОМЕР МАШИНЫ', 'МАРКА АВТО', 'ТИП МАШИНЫ', 'СОСТОЯНИЕ МАШИНЫ', 'ЦВЕТ МАШИНЫ'),
+                  headings=('ГОС НОМЕР', 'МАРКА АВТО', 'ТИП МАШИНЫ', 'СОСТОЯНИЕ МАШИНЫ', 'ЦВЕТ'),
                   rows=((key, value[0], value[1], value[2], value[3]) for key, value in baza.items()))
     table.grid(row=1, column=0, columnspan=3, sticky='ns', padx=20, pady=20)
 
